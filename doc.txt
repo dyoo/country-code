@@ -47,8 +47,7 @@ There's also a list of all the country codes in _country-codes_.
 Caveats
 -------
 
-The country codes themselves are uppercased, although the
-country-code? and country-code->country strings will try to match
-lowercase as well.  Also be aware that the string associated with AX
-is non-ASCII.
+The country codes themselves are uppercased, although COUNTRY-CODE?
+and COUNTRY-CODE->NAME will try to permissivly match with lowercase as
+well.  Also be aware that the string associated with AX is non-ASCII.
 

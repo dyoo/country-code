@@ -1,0 +1,8 @@
+(module info (lib "infotab.ss" "setup")
+  (define name "country-codes")
+  (define blurb '("ISO 3166 country codes."))
+  (define categories '(misc))
+  (define doc.txt "doc.txt")
+  (define homepage "http://hkn.eecs.berkeley.edu/~dyoo/plt/")
+  (define primary-file "country-codes.ss")
+  (define version "1.0"))
