@@ -5,4 +5,4 @@
   (define doc.txt "doc.txt")
   (define homepage "http://hkn.eecs.berkeley.edu/~dyoo/plt/")
   (define primary-file "country-codes.ss")
-  (define version "1.0"))
+  (define version "1.1"))

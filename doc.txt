@@ -23,8 +23,8 @@ Example
     244
     > (country-code? "fi")
     #t
-    > (map country-code->name '("fi" "fi" "fo" "fum"))
-    ("FINLAND" "FINLAND" "FAROE ISLANDS" #f)
+    > (map country-code->name '("fe" "fi" "fo" "fm"))
+    (#f "FINLAND" "FAROE ISLANDS" "MICRONESIA, FEDERATED STATES OF")
 
 
 API
