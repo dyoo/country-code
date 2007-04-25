@@ -1,0 +1,54 @@
+_country-codes.ss_ : ISO 3166 country codes
+
+Index terms: _iso3166_ _3166_ _country codes_
+
+
+
+Introduction
+------------
+
+This is just a quick-and-dirty module for getting the country name,
+given a two letter country code.  A _country code_ is a two letter
+string, like "US" or "KR".
+
+
+
+Example
+-------
+
+    > (require (planet ("country-codes.ss" ("dyoo" "country-codes.plt"))))
+    > (country-code->name "CA")
+    "CANADA"
+    > (length country-codes)
+    244
+    > (country-code? "fi")
+    #t
+
+
+API
+---
+
+> country-code?: string -> boolean
+Returns true if the string is a known country code.
+
+
+> country-code->name: string -> (union string #f)
+Returns the name of the country associated with the given country code.
+
+
+
+There's also a list of all the country codes in _country-codes_.
+
+> country-codes: (list-immutableof string)
+
+
+
+
+Caveats
+-------
+
+The country codes themselves are uppercased, although the
+country-code? and country-code->country strings will try to match
+lowercase as well.  Also be aware that the string associated with AX
+is non-ASCII.
+
