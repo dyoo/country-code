@@ -16,13 +16,15 @@ string, like "US" or "KR".
 Example
 -------
 
-    > (require (planet ("country-codes.ss" ("dyoo" "country-codes.plt"))))
+    > (require (planet "country-codes.ss" ("dyoo" "country-codes.plt")))
     > (country-code->name "CA")
     "CANADA"
     > (length country-codes)
     244
     > (country-code? "fi")
     #t
+    > (map country-code->name '("fi" "fi" "fo" "fum"))
+    ("FINLAND" "FINLAND" "FAROE ISLANDS" #f)
 
 
 API
