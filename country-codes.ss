@@ -267,7 +267,7 @@ EOF
                                     (car (third matches))
                                     (cdr (third matches)))])
                (hash-table-put! ht code country)
-               (loop (cdr (car matches)))))]))
+               (loop (cdr (first matches)))))]))
   
   (define country-codes
     (foldr cons-immutable empty (hash-table-map ht (lambda (k v) k))))
